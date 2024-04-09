@@ -1,9 +1,10 @@
-while True:
-    answer = int(input('When was Python 1.0 released? '))
-    if answer > 1994:
-            print('It was earlier than that!')
-    elif answer < 1994:
-             print('It was later than that!')
-    else:
-        print('Correct!')
-        break
+days = int(input('How many days ago have you purchased the item? '))
+used = input('Have you used the item at all [y/n]? ')
+broken = input('Has the item broken down on its own [y/n]? ')
+
+if ((broken == 'y' or (days <= 10 and used == 'n')): 
+print('You can get a refund.')
+else:
+    print('You cannot get a refund.')
+
+  
